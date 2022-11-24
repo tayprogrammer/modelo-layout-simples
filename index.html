@@ -1,0 +1,102 @@
+<!DOCTYPE html> 
+<html lang="pt-BR">
+	<head>
+			<title>Layouts</title>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<style type="text/css">
+				* {
+			  box-sizing: border-box;
+			}
+
+			body {
+			  font-family: Arial, Helvetica, sans-serif;
+			}
+
+			/* Style the header */
+			header {
+			  background-color: #666;
+			  padding: 30px;
+			  text-align: center;
+			  font-size: 35px;
+			  color: white;
+			}
+
+			/* Create two columns/boxes that floats next to each other */
+			nav {
+			  float: left;
+			  width: 30%;
+			   
+			  background: #ccc;
+			  padding: 20px;
+			}
+
+			/* Style the list inside the menu */
+			nav ul {
+			  list-style-type: none;
+			  padding: 0;
+			}
+
+			article {
+			  float: left;
+			  padding: 20px;
+			  width: 70%;
+			  background-color: #f1f1f1;
+			}
+
+			/* Clear floats after the columns */
+			section::after {
+			  background: #ccc;
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+
+			/* Style the footer */
+			footer {
+			  background-color: #777;
+			  padding: 10px;
+			  text-align: center;
+			  color: white;
+			}
+
+			/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+			@media (max-width: 600px) {
+			  nav, article {
+			    width: 100%;
+			    height: auto;
+			  }
+			}
+			</style>
+	</head>
+	<body>
+		
+	<header>
+		<h2>Título da Página</h2>
+	</header>
+
+	<section>
+		<nav>
+			<ul>
+				<li><a href="#inicio">Home</li>
+				<li><a href="#sobre">Sobre</li>
+				<li><a href="#contato">Contato</li>
+			</ul>
+		</nav>
+		<article>
+			<h1>título Artigo</h1>
+			<p>
+				Não obstante, o consenso sobre a necessidade de qualificação ainda não demonstrou convincentemente que vai participar na mudança das direções preferenciais no sentido do progresso. Ainda assim, existem dúvidas a respeito de como a complexidade dos estudos efetuados cumpre um papel essencial na formulação das condições financeiras e administrativas exigidas. Evidentemente, o entendimento das metas propostas exige a precisão e a definição da gestão inovadora da qual fazemos parte.
+			</p>
+			<p>
+				 Podemos já vislumbrar o modo pelo qual a contínua expansão de nossa atividade faz parte de um processo de gerenciamento das posturas dos órgãos dirigentes com relação às suas atribuições. O que temos que ter sempre em mente é que a mobilidade dos capitais internacionais garante a contribuição de um grupo importante na determinação do retorno esperado a longo prazo. Assim mesmo, a crescente influência da mídia assume importantes posições no estabelecimento dos modos de operação convencionais. Desta maneira, o desenvolvimento contínuo de distintas formas de atuação possibilita uma melhor visão global do sistema de formação de quadros que corresponde às necessidades.
+			</p>
+		</article>
+	</section>
+
+	<footer>
+		<p>Desenvolvido por Tay</p>
+	</footer>
+
+	</body>
+</html>
